@@ -266,7 +266,13 @@ header("Content-type: text/html; charset=utf-8");
 <div id="footer">
 	<div id="footer_content">
 		Powered by <strong><a href="http://www.yourtinytodo.net/">yourTinyTodo</a></strong> <?=YTT_VERSION?>
-		<div id="loggedinuser"><?=_e('loggedin_as')?> <?=(isset($_SESSION['userid']))?getUserName($_SESSION['userid']):''?></div>
+		<div id="loggedinuser">
+			<?php
+			if (!empty($_SERVER['PHP_AUTH_USER'])) {
+				echo $_SERVER['PHP_AUTH_USER'];
+			}
+			?>
+		</div>
 	</div>
 </div>
 
