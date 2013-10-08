@@ -82,8 +82,8 @@ if(!$ver)
 <label><input type="radio" name="installdb" value="mysql" onclick="document.getElementById(\'mysqlsettings\').style.display=\'\';document.getElementById(\'postgressettings\').style.display=\'none\'" />MySQL</label><br/><br/>
 <label><input type="radio" name="installdb" value="postgres" onclick="document.getElementById(\'postgressettings\').style.display=\'\';document.getElementById(\'mysqlsettings\').style.display=\'none\'" />Postgres</label><br/>
 <div id="mysqlsettings" style="display:none; margin-left:30px;"><br/><table><tr><td>Host:</td><td><input type="text" name="mysql_host" value="localhost" /></td></tr>
-<tr><td>Database:</td><td><input type="text" name="mysql_db" value="yourtinytodo" /></td></tr>
-<tr><td>User:</td><td><input type="text" name="mysql_user" value="user" /></td></tr>
+<tr><td>Database:</td><td><input type="text" name="mysql_db" value="iariss_" /></td></tr>
+<tr><td>User:</td><td><input type="text" name="mysql_user" value="iariss_" /></td></tr>
 <tr><td>Password:</td><td><input type="password" name="mysql_password" /></td></tr>
 <tr><td>Table prefix:</td><td><input type="text" name="mysql_prefix" value="ytt_" /></td></tr>
 </table></div><div id="postgressettings" style="display:none; margin-left:30px;"><br/><table><tr><td>Host:</td><td><input type="text" name="postgres_host" value="localhost" /></td></tr>
