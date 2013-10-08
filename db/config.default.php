@@ -17,8 +17,8 @@ $config['db'] = '';
 
 # Specify these settings if you selected above to use Mysql
 $config['mysql.host'] = "localhost";
-$config['mysql.db'] = "yytinytodo";
-$config['mysql.user'] = "user";
+$config['mysql.db'] = "iariss_";
+$config['mysql.user'] = "iariss_";
 $config['mysql.password'] = "";
 
 # Tables prefix
@@ -31,7 +31,7 @@ $config['url'] = '';
 $config['ytt_url'] = '';
 
 # Language pack
-$config['lang'] = "en";
+$config['lang'] = "fr";
 
 # Specify password here to protect your tasks from modification,
 #  or leave empty that everyone could read/write todolist
@@ -44,7 +44,7 @@ $config['password'] = "";
 $config['multiuser'] = 0;
 
 # Default Time zone
-$config['timezone'] = 'UTC';
+$config['timezone'] = 'Europe/Paris';
 
 # To disable auto adding selected tag  comment out the line below or set value to 0
 $config['autotag'] = 1;
