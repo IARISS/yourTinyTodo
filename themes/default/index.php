@@ -26,6 +26,9 @@ header("Content-type: text/html; charset=utf-8");
 	<?php else: ?>
 	<link rel="stylesheet" type="text/css" href="<?php yttinfo('template_url'); ?>print.css?v=<?=YTT_VERSION?>" media="print" />
 	<?php endif; ?>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="//static.iariss.fr/iariss/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" href="//static.iariss.fr/iariss/favicon/favicon.png">
 </head>
 
 <body>
@@ -86,9 +89,12 @@ header("Content-type: text/html; charset=utf-8");
 <div id="ytt_body">
 
 <div id="function-bar">
-	<h2><?php yttinfo('title'); ?></h2>
+	<h1>
+		IARISS &ndash; Sapin
+		<div id="loading"></div>
+	</h1>
 
-	<div id="loading"></div>
+	
 
 	<div id="bar">
 		<div id="msg">
@@ -123,6 +129,7 @@ header("Content-type: text/html; charset=utf-8");
 <div id="main">
 
 <div id="header">
+	<h2><?php yttinfo('title'); ?></h2>
 	<div id="ytt-work-timer">
 		<span id="ytt-time">00:00:00</span>
 		<a href="#" id="ytt-timer-pause" title="<?=_e('timer_pause')?>"></a>
@@ -265,11 +272,11 @@ header("Content-type: text/html; charset=utf-8");
 
 <div id="footer">
 	<div id="footer_content">
-		Powered by <strong><a href="http://www.yourtinytodo.net/">yourTinyTodo</a></strong> <?=YTT_VERSION?>
+		Powered by <strong><a href="https://github.com/IARISS/yourTinyTodo">yourTinyTodo</a></strong> <?=YTT_VERSION?> and adapted by <a href="http://iariss.fr">IARISS</a>
 		<div id="loggedinuser">
 			<?php
 			if (!empty($_SERVER['PHP_AUTH_USER'])) {
-				echo $_SERVER['PHP_AUTH_USER'];
+				echo ucwords(str_replace('.', '. ', htmlspecialchars($_SERVER['PHP_AUTH_USER'])));
 			}
 			?>
 		</div>

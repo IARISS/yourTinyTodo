@@ -10,7 +10,7 @@ Licensed under the GNU GPL v3 license. See file COPYRIGHT for details.
 
 /*	default style	*/
 
-html    { height:100%; }
+html    { height:100%; margin:0; }
 body   {
     height:100%; min-height:100%;
     background: url(images/bg_body.png) fixed;
@@ -28,9 +28,9 @@ body   {
 
 td, th, input, textarea, select { font-family:arial; font-size:1em; }
 form { display: inline; }
-h2,h3 { margin:0; }
-h2 { font-size:1.5em; float:left; padding-right:10px; background: -moz-linear-gradient(top, #fff, #f0f0f0);
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f0f0f0)); }
+h1,h2,h3 { margin:0; }
+h1 { font-size:1.5em; float:left; padding:6px 0 0 8px; position:relative; font-weight:normal; }
+h2 {margin: 8px 10px; line-height: 35px; color:#fff;}
 h3 { border-bottom:2px solid #B5D5FF; margin-bottom:10px; padding:6px 0; font-size:1.1em; }
 #page_tasks h3 { padding-left:4px; padding-right:4px; }
 a { color:#0000ff; cursor:pointer; text-decoration:underline; }
@@ -38,13 +38,14 @@ a { color:#0000ff; cursor:pointer; text-decoration:underline; }
 #space { height:30px; }
 #footer { height:30px; margin-top:-28px; }
 #footer_content {
-    background-color:#666666; padding:5px; font-size:0.8em; color:#FFFFFF;
+    background-color:#666666; padding:8px 10px 5px; font-size:0.8em; color:#FFFFFF;
     -webkit-border-top-left-radius: 8px;
     -webkit-border-top-right-radius: 8px;
     -moz-border-radius-topleft: 8px;
     -moz-border-radius-topright: 8px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+	border: 1px solid #666666;
 }
 #footer_content a { color:#FFFFFF; }
 
@@ -190,10 +191,8 @@ a { color:#0000ff; cursor:pointer; text-decoration:underline; }
 
 #main {
     background: #fff;
-    -moz-border-radius: 8px;
-    -moz-box-shadow: 0 0 10px #c1c1c1;
-    -webkit-border-radius: 8px;
-    -webkit-box-shadow: 0 0 10px #c1c1c1;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #c1c1c1;
     padding:65px 24px 24px;
     overflow: hidden;
     position: relative;
@@ -227,17 +226,17 @@ a { color:#0000ff; cursor:pointer; text-decoration:underline; }
 #authform div { padding:2px 0px; }
 #authform div.h { font-weight:bold; }
 #authform label {font-size: 1em; font-weight: bold}
-#loading { float:left; padding-top:5px; background-color:#ffffff; display:none; padding-right:6px; width:16px; height:16px; background:url(images/loading1.gif) no-repeat; }
+#loading { position:absolute; right:-24px; top:5px; background-color:#ffffff; display:none; width:16px; height:16px; background:url(images/loading1.gif) no-repeat; }
 
 #subbar {height:25px; text-align: right; margin-top: 29px;}
 #header {
     display:block;
-    background: url(images/header.png) no-repeat;
+    background: #6DA7EE;
     height:51px;
-    width:944px;
-    left: 1px;
+    width:100%;
     position: absolute;
-    top: 1px;
+    top: 0;
+    left: 0;
 }
 
 #ytt-work-timer {
