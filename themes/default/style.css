@@ -17,7 +17,7 @@ body   {
     margin: 0;
     padding: 0;
     color: #333;
-    font: 14px/18px Helvetica, Arial, sans-serif;
+    font: 14px/18px Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
     overflow-y: scroll;
 }
 
@@ -26,10 +26,13 @@ body   {
 #ytt_body { padding:45px 2px 16px; }
 
 
-td, th, input, textarea, select { font-family:arial; font-size:1em; }
+td, th, input, textarea, select { font-family:Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:1em; }
 form { display: inline; }
 h1,h2,h3 { margin:0; }
-h1 { font-size:1.5em; float:left; padding:6px 0 0 8px; position:relative; font-weight:normal; }
+h1 { font-size:1.4em; float:left; padding:5px 0 0 8px; position:relative; font-weight:normal; vertical-align: middle; }
+h1 img { float:left; margin: 2px 5px 0 0; vertical-align: middle; }
+h1 a { color:#3B498B; text-decoration:none; }
+h1 a:hover { text-decoration:underline; }
 h2 {margin: 8px 10px; line-height: 35px; color:#fff;}
 h3 { border-bottom:2px solid #B5D5FF; margin-bottom:10px; padding:6px 0; font-size:1.1em; }
 #page_tasks h3 { padding-left:4px; padding-right:4px; }
@@ -201,7 +204,7 @@ a { color:#0000ff; cursor:pointer; text-decoration:underline; }
 .menuitem {
     background-color: #666666;
     border-radius: 4px 4px 4px 4px;
-    font-family: Arial;
+    /*font-family: Arial;*/
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
@@ -212,7 +215,7 @@ a { color:#0000ff; cursor:pointer; text-decoration:underline; }
 
     .menuitem * {
         color: #FFFFFF;
-        font-family: Arial;
+        /*font-family: Arial;*/
         font-size: 12px;
         font-weight: bold;
         text-decoration: none;
@@ -231,7 +234,8 @@ a { color:#0000ff; cursor:pointer; text-decoration:underline; }
 #subbar {height:25px; text-align: right; margin-top: 29px;}
 #header {
     display:block;
-    background: #6DA7EE;
+    /*background: #6DA7EE;*/
+    background: #3D9DDB;
     height:51px;
     width:100%;
     position: absolute;

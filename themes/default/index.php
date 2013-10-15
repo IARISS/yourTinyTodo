@@ -15,7 +15,7 @@ header("Content-type: text/html; charset=utf-8");
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title><?php yttinfo('title'); ?></title>
+	<title><?php yttinfo('title'); ?> &middot; Sapin IARISS</title>
 	<link rel="stylesheet" type="text/css" href="<?php yttinfo('template_url'); ?>style.css?v=<?=YTT_VERSION?>" media="all" />
 	<?php if(Config::get('rtl')): ?>
 	<link rel="stylesheet" type="text/css" href="<?php yttinfo('template_url'); ?>style_rtl.css?v=<?=YTT_VERSION?>" media="all" />
@@ -26,9 +26,10 @@ header("Content-type: text/html; charset=utf-8");
 	<?php else: ?>
 	<link rel="stylesheet" type="text/css" href="<?php yttinfo('template_url'); ?>print.css?v=<?=YTT_VERSION?>" media="print" />
 	<?php endif; ?>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
 	
-	<link rel="shortcut icon" type="image/x-icon" href="//static.iariss.fr/iariss/favicon/favicon.ico" />
-    <link rel="icon" type="image/png" href="//static.iariss.fr/iariss/favicon/favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="//static.iariss.fr/iariss/favicon/favicon-flat.ico" />
+    <link rel="icon" type="image/png" href="//static.iariss.fr/iariss/favicon/favicon-flat.png">
 </head>
 
 <body>
@@ -90,7 +91,7 @@ header("Content-type: text/html; charset=utf-8");
 
 <div id="function-bar">
 	<h1>
-		IARISS &ndash; Sapin
+		<a href="//sapin.iariss.fr"><img src="//static.iariss.fr/iariss/favicon/favicon-flat.ico" /> Sapin</a>
 		<div id="loading"></div>
 	</h1>
 
